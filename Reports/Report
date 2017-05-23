@@ -1,0 +1,23 @@
+Q.   Does your program output any garbage? If yes, why? 
+
+Sol. Yes,the program does show unexpected behaviour which can be termed as a garbage output during execution .E.g. " Producedxsh $  value 57" ,"ProdCuced value 113","nsumed value 57" etc.
+This is because both producer and consumer processes are not synchronized.
+
+Q.   Are all the produced values getting consumed? Check your program for a small count like 20.
+
+Sol. No, all the produced values are not getting consumed.Even for a small countlike 20 , all the values are not getting consumed.
+
+Functions used in the project:
+
+-void consumer(int count)
+-void producer(int count)
+-shellcmd xsh_prodcons(int nargs, char *args[])
+
+Group Tasks Distribution:
+
+-void consumer(int count)- Bansalro worked on this function.
+-void producer(int count)-sarafm worked on this function.
+-shellcmd xsh_prodcons(int nargs, char *args[])-Both contributed significantly 
+on this function.
+
+

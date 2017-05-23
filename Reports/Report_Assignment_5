@@ -1,0 +1,13 @@
+Report Assignment 5
+
+Functionality developed by various team members:
+
+1. Rohil Bansal
+
+Created the file Queue.c and the functions like enqueue and dequeue. Also, did the FUTURE_QUEUE implementation.
+Also changed the future_free.c, future_set.c
+
+2. Mohit Saraf
+
+Changed the implementation in xsh_prodcons.h, future.h and future_alloc.c, future_get.c
+Also, helped in writing Queue.c and did the FUTURE_SHARED implementation.

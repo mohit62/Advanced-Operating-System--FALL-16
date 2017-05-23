@@ -1,0 +1,23 @@
+Implementation:
+
+fs.h - Contains all the prototypes of the structures and functions being used in the implementation.
+bs.c- Contains basic block read and write functionality implementation for the file system.
+fs.c - Contains code for implementing generic operations in a basic File System as given below:
+	a)fs_create-This function will create  a new file and defines the attributes of file like name etc.
+	b)fs_open-This function will open the file with the filename passed as parameter.
+	c)fs_write-This function will write the data  block from buffer to a file.
+   	d)fs_read-This function will read the data block upto size passed as parameter.
+	e)fs_close-This function will change the file already open to closed state.
+	f)fs_seek-This function will move the pointer to the begining of data block.
+
+Lessons Learned :
+We learned about the basic concept of file system and inodes and various generic operations that can be performed in a File System.
+
+Team Contribution:
+
+fs_create-BansalRo
+fs_open-BansalRo
+fs_write-BansalRo
+fs_read-Sarafm
+fs_close-Sarafm
+fs_seek-Sarafm

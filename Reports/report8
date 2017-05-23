@@ -1,0 +1,31 @@
+Contributions:
+
+Mohit Saraf
+server.c 
+xsh_arp_test.c
+ 
+Rohil Bansal
+xsh_ udp_request
+fcons_udp_print.c
+
+How to run the program:
+
+To check he arp cache table entry:
+Go to qemu: make qemu
+$ arptest
+--It will show the current arp table entries
+after 5 mins, chek the arp entry again and entries will be deleted
+$ arptest 
+--no entry in arp cache
+
+To check the Xinu server client:
+Run server.c on ubuntu machine from git - https://github.iu.edu/bansalro/OS-FA16
+$ gcc server.c
+$ ./a.out
+Go to Xinu on VM
+Go to qemu: make qemu
+get the severIP from ifconfig eth1 IP address. Our server runs on port 4500.
+$ udprequest serverIP 4500 -f (-f is optional for futures)
+This will ask to enter a string to end to server. enter a string
+$ <length of string> * 2 is displayed on client after server reads the client string and returns its length to client.
+$ exit --to exit the program

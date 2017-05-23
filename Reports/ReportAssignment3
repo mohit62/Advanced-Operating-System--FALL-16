@@ -1,0 +1,25 @@
+Q.How exactly is sychronization achieved using semaphore in our assignnment?
+
+Sol. In this case synchronization is achieved using wait and signal calls where in the producer section the wait call decrements the value of the counter  and sends the  consumer into waiting till the code 
+in the section gets executed .Then it sends out a signal call which increments the value of the counter and sends the consumer into execution state from wait state and the producer into wait state from 
+execution state.When the code section in the consumer gets executed it it sends a signal call to the producer which increments the counter value again and hence transfers the control to the producer 
+where the process is repeated again until all the code in the producer and consumer section gets executed one by one in a synchronized pattern.
+
+Q.Can the above sychronization be achieved with just one semphore? Why or why not?
+ 
+Sol. No, synchronization cannot be achieved with a single semaphore for our case.Let us assume we take a single semaphore and assign it a value 1 or 0  i.e. a mutex.This might  lead to a race condition 
+ where the producer might execute its full code as the consumer might go into a busy waiting state and after it has finished the execution the consumer will execute its section of code.The vice versa of
+ this situation can also be true where a producer can go into busy waiting and the consumer continues execution.
+
+Functions used in the project:
+
+-void consumer(int count)
+-void producer(int count)
+-shellcmd xsh_prodcons(int nargs, char *args[])
+
+Group Tasks Distribution:
+
+-void consumer(int count)- Bansalro worked on this function.
+-void producer(int count)-sarafm worked on this function.
+-shellcmd xsh_prodcons(int nargs, char *args[])-Both contributed significantly 
+on this function.

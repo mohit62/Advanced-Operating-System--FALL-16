@@ -1,0 +1,12 @@
+Report Assignment 4
+
+Functionality developed by various team members:
+
+1. Rohil Bansal
+
+Created the functions future_alloc.c, future_get.c, future_set.c and future_free.c
+
+2. Mohit Saraf
+
+Changed the implementation in xsh_prodcons.h, also written the future.h.
+Also developed the future_cons.c and future.prod.c
